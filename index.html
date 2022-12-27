@@ -1,183 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="robots" content="noindex" />
+		<title>👋 Welcome!</title>
+		<link
+			href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+			rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+			rel="stylesheet" />
+		<script
+			src="https://kit.fontawesome.com/85252dbf48.js"
+			crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<div class="cursor"></div>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="noindex">
-  <title>👋 Hi!</title>
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/85252dbf48.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<div class="cursor"></div>
+	<body transition-style="in:circle:hesitate" class="bg-primary">
+		<header class="sticky">
+			<nav class="bg-transparent text-black py-2">
+				<div class="container mx-auto flex items-center justify-between px-4">
+					<a href="#" class="text-xl font-bold hover:text-white"
+						>Nadira M.</a
+					>
+					<div class="flex items-center">
+						<a href="#" class="px-3 py-1 hover:text-white">About</a>
+						<a href="#projects" class="px-3 py-1 hover:text-white">Projects</a>
+                        <a href="#contact" class="px-3 py-1 hover:text-white">Contact</a>
+					</div>
+				</div>
+			</nav>
+		</header>
 
-<body transition-style="in:circle:hesitate" class="bg-primary">
-  <header>
-    <nav class="bg-transparent text-black py-2">
-      <div class="container mx-auto flex items-center justify-between px-4">
-        <a href="#" class="text-xl font-bold hover:text-white">Nadira M.</a>
-        <div class="flex items-center">
-          <a href="#" class="px-3 py-1 hover:text-white">About</a>
-          <a href="#projects" class="px-3 py-1 hover:text-white">Projects</a>
-          <!-- <a href="#contact" class="px-3 py-1 hover:text-white"
-							>Contact</a
-						> -->
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main class="padding-none bg-transparent text-black py-2 full-height">
-    <header class="padding-medium bg-transparent py-32 text-center text-black">
-      <!-- <div class="circle-button bounce" style="margin: auto"></div> -->
-      <div class="flex flex-row justify-center">
-        <div class="ball bg-primary bounce1 mx-10"></div>
-        <div class="ball bg-primary bounce2 mx-10"></div>
-        <div class="ball bg-primary bounce1 mx-10"></div>
-      </div>
-      <h1 class="text-6xl font-bold mb-4">Hello!</h1>
-      <p class="text-xl mb-8 my-10">
-        Hi! I'm Nadira Meidina, an undergrad in Computer
-        Science.<br /><br/>Throughout my studies, I developed a strong
-        passion for web development and have gained experience in
-        front-end technologies such as
-        <span class="highlight">Javascript Frameworks</span>
-        including React and Next.js,
-        <span class="highlight">CSS and its preprocessor SASS,</span>
-        and <span class="highlight">front-end libraries</span> like
-        Bootstrap and TailwindCSS. My knowledge extends to
-        <span class="highlight">back-end APIs and frameworks,</span>
-        like Node.js, Express and Axios.
-        <br /><br />
-      </p>
-      <div class="d-flex flex-column">
-        <!-- <div class="p-2">
-						<a href="#" class="button px-8 py-4 rounded-full"
-							>Learn More</a
-						>
-					</div> -->
-        <div class="my-10">
-          <a href="https://github.com/nadiramei/">
-            <button class="inline-block rounded-full bg-glass text-black leading-normal uppercase shadow-md w-11 h-11 mr-4">
-              <i class="fa-brands fa-github text-2xl"></i>
-            </button>
-          </a>
-
-          <a href="mailto:nadirameidina@gmail.com">
-            <button class="inline-block rounded-full bg-glass text-black leading-normal uppercase shadow-md w-11 h-11">
-              <i class="fa-solid fa-envelope text-2xl"></i>
-            </button>
-          </a>
-        </div>
-        <!-- <div class="flex flex-row justify-center">
-						<div class="ball bg-primary bounce2 mx-10"></div>
-						<div class="ball bg-primary bounce mx-10"></div>
-						<div class="ball bg-primary bounce2 mx-10"></div>
-					</div> -->
-      </div>
-    </header>
-
-    <!-- <section id="about" class="padding-medium bg-black text-pink">
-				<hr class="bg-primary line" />
-				<h2 class="scroll-fade-in">About Me</h2>
-				<p class="scroll-fade-in">
-					
+		<main class="padding-none bg-transparent text-black py-2 full-height">
+			<div class="padding-medium bg-transparent py-32 text-center text-black">
+				<!-- <div class="circle-button bounce" style="margin: auto"></div> -->
+				<div class="flex flex-row justify-center">
+					<div class="ball bg-primary bounce1 mx-10"></div>
+					<div class="ball bg-primary bounce2 mx-10"></div>
+					<div class="ball bg-primary bounce1 mx-10"></div>
+				</div>
+				<h1 class="text-6xl font-bold mb-4">Hello!</h1>
+				<p class="text-xl mb-8 my-10">
+					I'm Nadira Meidina, an undergrad in Computer Science.<br /><br />Throughout
+					my studies, I developed a strong passion for web development
+					and have gained experience in front-end technologies such as
+					<span class="highlight"><i class="fa-brands fa-square-js"></i> Javascript frameworks</span>
+					including React and Next.js,
+					<span class="highlight"><i class="fa-brands fa-css3-alt"></i> CSS</span> and its preprocessors, and <span class="highlight">front-end libraries</span> like
+					Bootstrap and TailwindCSS. My knowledge extends to
+					<span class="highlight">back-end APIs and frameworks,</span>
+					like Node.js, Express and Axios.
+					<br /><br />
+                    I am proficient in responsive web design, with a strong understanding of its principles and the ability to apply them in my work. I can create responsive layouts using modern CSS techniques such as media queries, grid, and flexbox, and I can implement my designs across multiple devices and screen sizes.
 				</p>
-			</section> -->
-    <section id="projects" class="padding-medium bg-black text-pink">
-      <!-- <div class="flex flex-row justify-center">
-    				<div class="ball bg-primary bounce mx-2"></div>
-    				<div class="ball bg-primary bounce2 mx-2"></div>
-    				<div class="ball bg-primary bounce mx-2"></div>
-                </div> -->
-      <h2 class="scroll-fade-in mt-10 mb-4 text-2xl font-bold">My Personal Projects</h2>
-      <div class="gradient-animation">
-        <div class="scroll-fade-in mb-10 responsive">
-          <iframe src="https://codepen.io/nadiramei/full/jOKQYVX" width="800" height="500" class="mx-2 responsive-frame"></iframe>
-          <iframe src="https://codepen.io/nadiramei/full/RwJepjJ" width="800" height="500" class="mx-2 responsive-frame"></iframe>
-        </div>
-        <hr class="bg-primary line" />
-        <div class="scroll-fade-in mb-10 mt-10 responsive">
-          <iframe src="https://codepen.io/nadiramei/full/ZERqMVO" width="800" height="500" class="mx-2 responsive-frame"></iframe>
-          <iframe src="https://codepen.io/nadiramei/full/mdKzvpN" width="800" height="500" class="mx-2 responsive-frame"></iframe>
-        </div>
-        <hr class="bg-primary line" />
-        <div class="scroll-fade-in mb-10 mt-10 responsive">
-          <iframe src="https://codepen.io/nadiramei/full/yLqeYva " width="800" height="500" class="mx-2 responsive-frame"></iframe>
-          <iframe src="https://codepen.io/nadiramei/full/xxzQmOw" width="800" height="500" class="mx-2 responsive-frame"></iframe>
-        </div>
-        <hr class="bg-primary line" />
-        <!-- https://codepen.io/nadiramei/full/ZERqMVO -->
-        <p class="mt-10">Made as part of freeCodeCamp's certification program.</p>
-      </div>
-    </section>
-    <!-- <section
-				id="contact"
-				class="js-show-on-scroll padding-medium bg-black text-pink">
-				<hr class="bg-primary line" />
+				<div class="d-flex flex-column">
+					<div class="mb-10">
+						<a href="https://github.com/nadiramei/" target="_blank">
+							<button
+								class="rounded-full bg-glass text-black shadow-md w-11 h-11 mr-4">
+								<i class="fa-brands fa-github text-2xl"></i>
+                                <span>My Github</span>
+							</button>
+						</a>
+                        <a href="https://codepen.io/nadiramei/" target="_blank">
+							<button
+								class="rounded-full bg-glass text-black shadow-md w-11 h-11 mr-4">
+								<i class="fa-brands fa-codepen text-2xl"></i>
+                                <span>My Codepen</span>
+							</button>
+						</a>
+					</div>
+				</div>
+			</div>
 
-				<h2 class="scroll-fade-in mt-10 text-2xl">Contact Me</h2>
-                <button class="circle-button">
+			<section id="projects" class="padding-medium bg-black text-pink">
+				<h2 class="scroll-fade-in mt-10 mb-4 text-2xl font-bold">
+					My Personal Projects
+				</h2>
+                <p class="mb-10">
+                    Made as part of freeCodeCamp's certification program.
+                </p>
+				<div class="gradient-animation">
+					<div class="scroll-fade-in mb-10 responsive">
+						<iframe
+							src="https://codepen.io/nadiramei/full/jOKQYVX"
+							width="800"
+							height="500"
+							class="mx-2 responsive-frame"></iframe>
+						<iframe
+							src="https://codepen.io/nadiramei/full/RwJepjJ"
+							width="800"
+							height="500"
+							class="mx-2 responsive-frame"></iframe>
+					</div>
+					<hr class="bg-primary line" />
+					<div class="scroll-fade-in mb-10 mt-10 responsive">
+						<iframe
+							src="https://codepen.io/nadiramei/full/ZERqMVO"
+							width="800"
+							height="500"
+							class="mx-2 responsive-frame"></iframe>
+						<iframe
+							src="https://codepen.io/nadiramei/full/mdKzvpN"
+							width="800"
+							height="500"
+							class="mx-2 responsive-frame"></iframe>
+					</div>
+					<hr class="bg-primary line" />
+					<div class="scroll-fade-in mb-10 mt-10 responsive">
+						<iframe
+							src="https://codepen.io/nadiramei/full/yLqeYva "
+							width="800"
+							height="500"
+							class="mx-2 responsive-frame"></iframe>
+						<iframe
+							src="https://codepen.io/nadiramei/full/xxzQmOw"
+							width="800"
+							height="500"
+							class="mx-2 responsive-frame"></iframe>
+					</div>
+					<hr class="bg-primary line" />
+				</div>
+			</section>
+            <section id="contact" class="bg-black text-pink pb-4">
+                <div class="padding-medium bg-transparent py-32 text-center text-pink">
+                    <h2 class="text-pink text-xl mb-4"><b>Contact Me</b></h2>
+                    <a href="mailto:nadirameidina@gmail.com">
+                        <button
+                            class="rounded-full bg-glass text-white shadow-md w-11 h-11 button-email">
+                            <i class="fa-solid fa-envelope text-2xl"></i>
+                            <span>nadirameidina@gmail.com</span>
+                        </button>
+                    </a>
+                </div>
+            </section>
+            
+		</main>
+	</body>
+	<script>
+        // fade-in animations for iframe
+		const fadeInElements = document.querySelectorAll(".scroll-fade-in");
 
-                </button>
-				<p class="scroll-fade-in">
-					You can contact me via email at
-					<a href="mailto:nadirameidina@gmail.com"><u>nadirameidina@gmail.com</u></a
-					>.
-				</p>
-			</section> -->
-  </main>
-</body>
-<script>
-  		// fade-in animations
-      const fadeInElements = document.querySelectorAll(".scroll-fade-in");
+		const fadeIn = (element) => {
+			element.style.opacity = 1;
+		};
 
-const fadeIn = (element) => {
-  element.style.opacity = 1;
-};
+		const options = {
+			root: null,
+			rootMargin: "0px",
+			threshold: 0,
+		};
 
-const options = {
-  root: null,
-  rootMargin: "0px",
-  threshold: 0,
-};
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					fadeIn(entry.target);
+					observer.unobserve(entry.target);
+				}
+			});
+		}, options);
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      fadeIn(entry.target);
-      observer.unobserve(entry.target);
-    }
-  });
-}, options);
+		fadeInElements.forEach((fadeInElement) => {
+			observer.observe(fadeInElement);
+		});
 
-fadeInElements.forEach((fadeInElement) => {
-  observer.observe(fadeInElement);
-});
+		// ===================================================
+		// custom cursor
+		const cursor = document.querySelector(".cursor");
+		var timeout;
+		document.addEventListener("mousemove", (e) => {
+			cursor.style.top = `${e.clientY}px`;
+			cursor.style.left = `${e.clientX}px`;
+			cursor.style.display = "block";
+			function mouseStopped() {
+				cursor.style.display = "none";
+			}
+			clearTimeout(timeout);
+			timeout = setTimeout(mouseStopped, 8000);
+		});
+		document.addEventListener("mouseout", (e) => {
+			cursor.style.display = "none";
+		});
 
-// ===================================================
-// custom cursor
-const cursor = document.querySelector(".cursor");
-var timeout;
-document.addEventListener("mousemove", (e) => {
-  cursor.style.top = `${e.clientY}px`;
-  cursor.style.left = `${e.clientX}px`;
-  cursor.style.display = "block";
-  function mouseStopped() {
-    cursor.style.display = "none";
-  }
-  clearTimeout(timeout);
-  timeout = setTimeout(mouseStopped, 8000);
-});
-document.addEventListener("mouseout", (e) => {
-  cursor.style.display = "none";
-});
-
-// ===================================================
-
-</script>
+		// ===================================================
+	</script>
 </html>
