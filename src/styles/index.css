@@ -1,0 +1,116 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "https://unpkg.com/transition-style";
+
+@import "./animation.css";
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+}
+
+*::selection {
+    color: #fbc2eb;
+    background-color: #000;
+}
+
+.bg-1 {
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+/* bg pattern from https://www.magicpattern.design/tools/css-backgrounds */
+/* 
+light mode: #fff #fbc2eb
+dark mode: #000 #3b3486
+*/
+.squares {
+    opacity: 0.8;
+    background-image: linear-gradient(#fff 4px, transparent 4px),
+        linear-gradient(to right, #fff 4px, #fbc2eb 4px);
+    background-size: 80px 80px;
+}
+.squares-dark {
+    opacity: 0.8;
+    background-image: linear-gradient(#000 4px, transparent 4px),
+        linear-gradient(to right, #000 4px, #3b3486 4px);
+    background-size: 80px 80px;
+}
+
+/* star shape from https://codepen.io/kitjenson/pen/jOKWXmN */
+/* 
+light mode: #F5F7F8
+dark mode: #C683D7
+*/
+.star {
+    --size: 1.5vmin;
+    --holes: calc(var(--size) * 0.495);
+    width: var(--size);
+    aspect-ratio: 1/1;
+    position: fixed;
+    background: #f5f7f8;
+    --mask: radial-gradient(
+            var(--holes) at var(--holes) var(--holes),
+            #0000 99%,
+            #000
+        )
+        calc(var(--holes) * -1) calc(var(--holes) * -1);
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    border-radius: 50%;
+    animation: sparkle 1s linear forwards;
+}
+.star-dark {
+    --size: 1.5vmin;
+    --holes: calc(var(--size) * 0.495);
+    width: var(--size);
+    aspect-ratio: 1/1;
+    position: fixed;
+    background: #c683d7;
+    --mask: radial-gradient(
+            var(--holes) at var(--holes) var(--holes),
+            #0000 99%,
+            #000
+        )
+        calc(var(--holes) * -1) calc(var(--holes) * -1);
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    border-radius: 50%;
+    animation: sparkle 1s linear forwards;
+}
+
+.footer {
+    background-color: #c1eafb;
+}
+.footer-dark {
+    background-color: #ffd1e3;
+}
+
+/* Custom scrollbar for WebKit browsers */
+::-webkit-scrollbar {
+    width: 12px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent; /* Set the background color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #323232; /* Set the color of the thumb (scrollbar handle) */
+    border-radius: 6px; /* Set the border-radius of the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Set the color of the thumb on hover */
+}
