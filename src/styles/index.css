@@ -97,20 +97,3 @@ dark mode: #C683D7
     background-color: #ffd1e3;
 }
 
-/* Custom scrollbar for WebKit browsers */
-::-webkit-scrollbar {
-    width: 12px; /* Set the width of the scrollbar */
-}
-
-::-webkit-scrollbar-track {
-    background-color: transparent; /* Set the background color of the track */
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #323232; /* Set the color of the thumb (scrollbar handle) */
-    border-radius: 6px; /* Set the border-radius of the thumb */
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background-color: #555; /* Set the color of the thumb on hover */
-}

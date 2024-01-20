@@ -18,10 +18,12 @@ function WindowsElement({
     return (
         // <Draggable>
             <div
-                className={`mx-auto mb-5 ${!showcase && 'md:absolute'} border border-2 border-solid border-b-red-400 border-r-red-400 ${
+                className={`mx-auto md:absolute mb-5 border border-2 border-solid border-b-red-400 border-r-red-400 ${
                     portfolio ? "w-[20rem] md:w-[40rem]" : "w-[20rem]"
                 }`}
-                style={{top: top, left: left}}
+                style={{
+                    top: top, 
+                    left: left}}
             >
                 <div className="h-8 bg-pink-300 border-b-2 border-red-400 flex flex-row items-center px-2">
                     <p className="font-mono">{title}</p>

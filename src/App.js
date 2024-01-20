@@ -94,7 +94,7 @@ function App() {
             top: "3rem",
             left: "30rem",
             children: (
-                <div className="bg-white p-2 flex flex-col">
+                <div className="bg-white p-2 flex flex-col hover:cursor-pointer">
                     <div className="flex flex-row items-center">
                         <div className="text-gray-500">language</div>
                         <div className="grow"></div>
@@ -138,7 +138,7 @@ function App() {
             top: "3rem",
             left: "52rem",
             children: (
-                <div className="bg-white p-2 flex flex-col">
+                <div className="bg-white p-2 flex flex-col hover:cursor-pointer">
                     <div className="flex flex-row items-center">
                         <div className="text-gray-500">tech stack</div>
                         <div className="grow"></div>
@@ -169,7 +169,7 @@ function App() {
             top: "16rem",
             left: "52rem",
             children: (
-                <div className="bg-white p-2 flex flex-col">
+                <div className="bg-white p-2 flex flex-col hover:cursor-pointer">
                     <div className="flex flex-row items-center">
                         <div className="text-gray-500">language</div>
                         <div className="grow"></div>
@@ -374,10 +374,10 @@ function App() {
             </div>
 
             {windows.map((window) => (
-                <div key={window.id}>
+                <div key={window.id} className="static">
                     {/* skills section */}
                     {window.id === 2 && (
-                        <div className="md:absolute mb-2 mx-auto md:top-[1rem] md:left-[30rem] w-80 md:w-[42rem]">
+                        <div className="mb-2 mx-auto md:ml-[30rem] md:mt-[-8rem] w-80 md:w-[42rem]">
                             <div className="flex flex-row items-center">
                                 <div
                                     className={`${isDarkMode && "text-pink-300"}`}
@@ -397,7 +397,7 @@ function App() {
                     )}
                     {/* portfolio section */}
                     {window.id === 5 && (
-                        <div className="md:absolute mb-2 mx-auto md:top-[30rem] md:left-[7rem] w-[20rem] md:w-[65rem]">
+                        <div className="mb-2 mx-auto md:mt-[20rem] md:ml-[7rem] w-[20rem] md:w-[65rem]">
                             <div className="flex flex-row items-center">
                                 <div
                                     className={`${
@@ -437,7 +437,7 @@ function App() {
             </a> 
             */}
             {/* personal showcase */}
-            <div className="md:absolute mb-2 mx-auto md:top-[86rem] md:left-[7rem] w-[20rem] md:w-[65rem]">
+            <div className="mb-2 mx-auto md:mt-[55rem] md:ml-[7rem] w-[20rem] md:w-[65rem]">
                 <div className="flex flex-row items-center">
                     <div className={`${isDarkMode && "text-pink-300"}`}>
                         Other Personal Projects
