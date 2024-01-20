@@ -43,7 +43,7 @@ function App() {
     async function getTime() {
         try {
             const response = await fetch(
-                "http://worldtimeapi.org/api/timezone/Asia/Jakarta"
+                "https://worldtimeapi.org/api/timezone/Asia/Jakarta"
             );
             const responseData = await response.json();
 
@@ -91,8 +91,8 @@ function App() {
             id: 2,
             title: "primary",
             isMinimized: false,
-            top: smallScreen ? "35rem" : "3rem",
-            left: smallScreen ? "1rem" : "30rem",
+            top: "3rem",
+            left: "30rem",
             children: (
                 <div className="bg-white p-2 flex flex-col">
                     <div className="flex flex-row items-center">
@@ -326,20 +326,18 @@ function App() {
             transition-style="in:wipe:right"
         >
             {stars.map((star) => (
-                <>
-                    <div
-                        key={star.id}
-                        className={isDarkMode ? "star-dark" : "star"}
-                        style={{
-                            position: "fixed",
-                            top: star.top,
-                            left: star.left,
-                            shape: "svg",
-                            animation: `blink 4s infinite ${star.delay}`,
-                            zIndex: "-1",
-                        }}
-                    ></div>
-                </>
+                <div
+                    key={star.id}
+                    className={isDarkMode ? "star-dark" : "star"}
+                    style={{
+                        position: "fixed",
+                        top: star.top,
+                        left: star.left,
+                        shape: "svg",
+                        animation: `blink 4s infinite ${star.delay}`,
+                        zIndex: "-1",
+                    }}
+                ></div>
             ))}
 
             <div className="flex md:flex-col">
@@ -376,15 +374,13 @@ function App() {
             </div>
 
             {windows.map((window) => (
-                <React.Fragment key={window.id}>
+                <div key={window.id}>
                     {/* skills section */}
                     {window.id === 2 && (
                         <div className="md:absolute mb-2 mx-auto md:top-[1rem] md:left-[30rem] w-80 md:w-[42rem]">
                             <div className="flex flex-row items-center">
                                 <div
-                                    className={`${
-                                        isDarkMode && "text-pink-300"
-                                    }`}
+                                    className={`${isDarkMode && "text-pink-300"}`}
                                 >
                                     My Skills
                                 </div>
@@ -433,7 +429,7 @@ function App() {
                             {window.children}
                         </WindowsElement>
                     )}
-                </React.Fragment>
+                </div>
             ))}
             {/* 
             <a href="https://www.codewars.com/users/nadiramei/">
