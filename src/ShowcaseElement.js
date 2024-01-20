@@ -10,9 +10,9 @@ function ShowcaseElement({title, onClick, children, left, top}) {
       setActiveButton(index);
     };
     return (
-        <Draggable>
+        // <Draggable>
             <div
-                className={`mx-auto md:absolute mb-5 border border-2 border-solid border-b-red-400 border-r-red-400 hover:cursor-grab w-[20rem] md:w-[65rem]`}
+                className={`mx-auto md:absolute mb-5 border border-2 border-solid border-b-red-400 border-r-red-400 w-[20rem] md:w-[65rem]`}
                 style={{top: top, left: left}}
             >
                 <div className="h-8 bg-pink-300 border-b-4 border-red-400 flex flex-row items-center">
@@ -42,7 +42,7 @@ function ShowcaseElement({title, onClick, children, left, top}) {
                     </div>
                 ))}
             </div>
-        </Draggable>
+        // </Draggable>
     );
 }
 export default ShowcaseElement;

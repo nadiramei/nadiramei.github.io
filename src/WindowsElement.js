@@ -16,9 +16,9 @@ function WindowsElement({
     showcase
 }) {
     return (
-        <Draggable>
+        // <Draggable>
             <div
-                className={`mx-auto mb-5 ${!showcase && 'md:absolute'} border border-2 border-solid border-b-red-400 border-r-red-400 hover:cursor-grab ${
+                className={`mx-auto mb-5 ${!showcase && 'md:absolute'} border border-2 border-solid border-b-red-400 border-r-red-400 ${
                     portfolio ? "w-[20rem] md:w-[40rem]" : "w-[20rem]"
                 }`}
                 style={{top: top, left: left}}
@@ -41,7 +41,7 @@ function WindowsElement({
                 </div>
                 {children}
             </div>
-        </Draggable>
+        // </Draggable>
     );
 }
 export default WindowsElement;
