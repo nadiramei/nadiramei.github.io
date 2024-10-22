@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from "react";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faEnvelope, faSun, faMoon} from "@fortawesome/free-solid-svg-icons";
+import React, { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope, faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 import WindowsElement from "./WindowsElement";
 import ShowcaseElement from "./ShowcaseElement";
 
@@ -9,7 +9,7 @@ function App() {
     const getRandomPosition = () => {
         const top = `${Math.floor(Math.random() * window.innerHeight)}px`;
         const left = `${Math.floor(Math.random() * window.innerWidth)}px`;
-        return {top, left};
+        return { top, left };
     };
 
     // randomizes stars' blink delay
@@ -82,7 +82,7 @@ function App() {
             top: "1rem",
             left: "7rem",
             children: (
-                <div className="typewriter z-2 bg-black text-white p-2 h-[25rem]">
+                <div className="typewriter z-2 bg-black text-white p-2 h-[26rem]">
                     <p></p>
                 </div>
             ),
@@ -103,8 +103,7 @@ function App() {
                     <div className="grid grid-cols-2">
                         <p>Javascript</p>
                         <p>Python</p>
-                        <p>English</p>
-                        <p>Indonesian</p>
+                        <p>TypeScript</p>
                     </div>
                     <div className="flex flex-row items-center">
                         <div className="text-gray-500">tech stack</div>
@@ -112,12 +111,12 @@ function App() {
                         <div className="ml-2 border-b border-solid border-gray-400 w-2/3"></div>
                     </div>
                     <div className="grid grid-cols-2">
-                        <p>ReactJS</p>
-                        <p>Sass</p>
-                        <p>NextJS</p>
+                        <p>React.js</p>
+                        <p>React Native</p>
+                        <p>Next.js</p>
                         <p>TailwindCSS</p>
-                        <p>NodeJS</p>
-                        <p>Git</p>
+                        <p>Express.js</p>
+                        <p>Redux</p>
                     </div>
                     <div className="flex flex-row items-center">
                         <div className="text-gray-500">others</div>
@@ -146,7 +145,7 @@ function App() {
                     </div>
                     <div className="grid grid-cols-2">
                         <p>Django</p>
-                        <p>Pug</p>
+                        <p>SpringBoot</p>
                         <p>Bootstrap</p>
                         <p>PostgreSQL</p>
                         <p>MySQL</p>
@@ -177,7 +176,7 @@ function App() {
                     </div>
                     <div className="grid grid-cols-2">
                         <p>Java</p>
-                        <p>Spanish</p>
+                        <p>PHP</p>
                     </div>
                     <div className="flex flex-row items-center">
                         <div className="text-gray-500">tech stack</div>
@@ -185,9 +184,9 @@ function App() {
                         <div className="ml-2 border-b border-solid border-gray-400 w-2/3"></div>
                     </div>
                     <div className="grid grid-cols-2">
-                        <p>VueJS</p>
+                        <p>Vue.js</p>
                         <p>Spring Boot</p>
-                        <p>Jest</p>
+                        <p>Laravel</p>
                     </div>
                 </div>
             ),
@@ -195,7 +194,7 @@ function App() {
         {
             id: 5,
             portfolio: true,
-            link: "http://gymnasticsindonesia.id/",
+            link: "https://gymnasticsindonesia.id/",
             title: "gymnasticsindonesia.id",
             isMinimized: false,
             top: "32rem",
@@ -206,7 +205,7 @@ function App() {
                         title="gymnastics indonesia"
                         height="400"
                         width="100%"
-                        src="https://persani-dev.vercel.app/"
+                        src="https://gymnasticsindonesia.id/"
                     ></iframe>
                 </div>
             ),
@@ -214,18 +213,18 @@ function App() {
         {
             id: 6,
             portfolio: true,
-            link: "https://skripsi-nadiramei.vercel.app/",
-            title: "undergrad_thesis",
+            link: "https://staging.indonesiaharleyfest.com/",
+            title: "indonesiaharleyfest.com",
             isMinimized: false,
             top: "58rem",
             left: "27rem",
             children: (
                 <div className="bg-white">
                     <iframe
-                        title="undergrad thesis nadiramei"
+                        title="indonesia harley fest"
                         height="400"
                         width="100%"
-                        src="https://skripsi-nadiramei.vercel.app/"
+                        src="https://staging.indonesiaharleyfest.com/"
                     ></iframe>
                 </div>
             ),
@@ -305,14 +304,14 @@ function App() {
             setWindows((prevWindows) =>
                 prevWindows.map((window) =>
                     window.id === id
-                        ? {...window, isMinimized: !window.isMinimized}
+                        ? { ...window, isMinimized: !window.isMinimized }
                         : window
                 )
             );
         } else {
             setShowcaseList((window) =>
                 window.id === id
-                    ? {...window, isMinimized: !window.isMinimized}
+                    ? { ...window, isMinimized: !window.isMinimized }
                     : window
             );
         }
@@ -320,9 +319,8 @@ function App() {
 
     return (
         <div
-            className={`flex flex-col h-[170rem] md:h-[115rem] w-screen md:min-w-[75rem] font-mono overflow-y-auto ${
-                isDarkMode ? "squares-dark" : "squares"
-            }`}
+            className={`flex flex-col h-[170rem] md:h-[115rem] w-screen md:min-w-[75rem] font-mono overflow-y-auto ${isDarkMode ? "squares-dark" : "squares"
+                }`}
             transition-style="in:wipe:right"
         >
             {stars.map((star) => (
@@ -345,9 +343,8 @@ function App() {
                     rel="noreferrer"
                     target="_blank"
                     href="https://github.com/nadiramei"
-                    className={`flex flex-col items-center justify-center p-2 w-28 ${
-                        isDarkMode && "fill-current text-pink-200"
-                    }`}
+                    className={`flex flex-col items-center justify-center p-2 w-28 ${isDarkMode && "fill-current text-pink-200"
+                        }`}
                 >
                     {/* github icon */}
                     <svg
@@ -364,9 +361,8 @@ function App() {
                     rel="noreferrer"
                     target="_blank"
                     href="mailto:nadiramei@gmail.com"
-                    className={`flex flex-col items-center justify-center p-2 w-28 ${
-                        isDarkMode && "text-pink-200"
-                    }`}
+                    className={`flex flex-col items-center justify-center p-2 w-28 ${isDarkMode && "text-pink-200"
+                        }`}
                 >
                     <FontAwesomeIcon icon={faEnvelope} className="h-8" />
                     Contact Me
@@ -386,11 +382,10 @@ function App() {
                                 </div>
                                 <div className="grow"></div>
                                 <div
-                                    className={`ml-2 border-b border-solid w-[70%] md:w-[80%] ${
-                                        isDarkMode
-                                            ? "border-pink-100"
-                                            : "border-black"
-                                    }`}
+                                    className={`ml-2 border-b border-solid w-[70%] md:w-[80%] ${isDarkMode
+                                        ? "border-pink-100"
+                                        : "border-black"
+                                        }`}
                                 ></div>
                             </div>
                         </div>
@@ -400,19 +395,17 @@ function App() {
                         <div className="mb-2 mx-auto md:mt-[20rem] md:ml-[7rem] w-[20rem] md:w-[65rem]">
                             <div className="flex flex-row items-center">
                                 <div
-                                    className={`${
-                                        isDarkMode && "text-pink-300"
-                                    }`}
+                                    className={`${isDarkMode && "text-pink-300"
+                                        }`}
                                 >
                                     My Portfolio
                                 </div>
                                 <div className="grow"></div>
                                 <div
-                                    className={`ml-2 border-b border-solid w-[60%] md:w-[85%] ${
-                                        isDarkMode
-                                            ? "border-pink-100"
-                                            : "border-black"
-                                    }`}
+                                    className={`ml-2 border-b border-solid w-[60%] md:w-[85%] ${isDarkMode
+                                        ? "border-pink-100"
+                                        : "border-black"
+                                        }`}
                                 ></div>
                             </div>
                         </div>
@@ -444,9 +437,8 @@ function App() {
                     </div>
                     <div className="grow"></div>
                     <div
-                        className={`ml-2 border-b border-solid w-[30%] md:w-[75%] ${
-                            isDarkMode ? "border-pink-100" : "border-black"
-                        }`}
+                        className={`ml-2 border-b border-solid w-[30%] md:w-[75%] ${isDarkMode ? "border-pink-100" : "border-black"
+                            }`}
                     ></div>
                 </div>
             </div>
@@ -464,18 +456,15 @@ function App() {
             <div className="flex-grow"></div>
             <div
                 id="taskbar"
-                className={`fixed z-10 bottom-0 left-0 right-0 h-10 flex items-center ${
-                    isDarkMode ? "bg-pink-300" : "footer"
-                }`}
+                className={`fixed z-10 bottom-0 left-0 right-0 h-10 flex items-center ${isDarkMode ? "bg-pink-300" : "footer"
+                    }`}
             >
                 <button
                     onClick={toggleDarkMode}
-                    className={`mx-4 w-6 items-center transition-transform duration-300 ${
-                        isDarkMode && "transform rotate-45"
-                    }`}
-                    aria-label={`Toggle ${
-                        isDarkMode ? "Light Mode" : "Dark Mode"
-                    }`}
+                    className={`mx-4 w-6 items-center transition-transform duration-300 ${isDarkMode && "transform rotate-45"
+                        }`}
+                    aria-label={`Toggle ${isDarkMode ? "Light Mode" : "Dark Mode"
+                        }`}
                 >
                     <FontAwesomeIcon
                         icon={isDarkMode ? faMoon : faSun}

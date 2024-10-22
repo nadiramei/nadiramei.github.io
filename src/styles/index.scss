@@ -5,19 +5,16 @@
     font-family: "Courier New", Courier, monospace;
     // width: fit-content;
     text-align: start;
+
     & p {
         overflow: hidden;
         white-space: nowrap;
         margin: 0;
 
-        @include typed(
-            "Hello, world.<[15]>\AI'm Nadira, a Junior Programmer with a year under my belt,<[5]> where I got to help my team add new features,<[5]> fix bugs,<[5]> and refine existing functionalities on apps and websites.<[15]>\AI've got hands-on experience crafting entire websites,<[5]> which integrated i18n translations for accessibility,<[5]> making them not just functional but also user-friendly.<[15]>\ALet's work together ✌",
+        @include typed("Hello!<[5]> I am a front-end web developer with 2 years of experience specializing in React, Next.js, and Tailwind CSS.<[5]> I have a strong foundation in building responsive, user-friendly interfaces and have also worked in full-stack positions, giving me a well-rounded understanding of both frontend and backend workflows.<[5]> Additionally, I have experience in mobile development, which allows me to create cross-platform solutions.",
             2,
-            (
-                iterations: 0,
-                alt-text:
-                    "Hello, world. I'm Nadira, a Junior Programmer with a year under my belt, where I got to help my team add new features, fix bugs, and refine existing functionalities on existing apps and websites. I've got hands-on experience crafting entire websites, which integrated i18n translations for accessibility, making them not just functional but also user-friendly. Let's work together.",
-            )
-        );
+            (iterations: 0,
+                alt-text: "Hello! I am a front-end web developer with 2 years of experience specializing in React, Next.js, and Tailwind CSS. I have a strong foundation in building responsive, user-friendly interfaces and have also worked in full-stack positions, giving me a well-rounded understanding of both frontend and backend workflows. Additionally, I have experience in mobile development, which allows me to create cross-platform solutions.",
+            ));
     }
 }
